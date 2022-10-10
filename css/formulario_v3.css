@@ -106,8 +106,6 @@ textarea:focus {
    border: 3px solid rgb(70, 70, 121);
    border-radius: 0.3rem;
    padding: 0.5rem;
-   /* border: 10px solid black; 
-   text-decoration-line: underline ; */
 }
 .form-containter .check-item {
   margin: auto 0.5rem;
@@ -165,6 +163,11 @@ input[type=reset]:hover {
   .form-containter .check {
     grid-column-start: span 1;
     grid-row-start: auto;
+  }
+  .form-containter .check-recuadro {
+    border: 3px solid rgb(70, 70, 121);
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.3rem;
   }
   .form-containter .check-item {
     margin: auto 0.1rem;
