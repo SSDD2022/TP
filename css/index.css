@@ -52,3 +52,34 @@
    grid-area: mapa-area;
 }
 
+@media screen and (max-width: 575.98px) {
+    .main-container {
+        grid-template-columns: 100%;
+        grid-template-areas: "saludo-area"        
+                             "presentacion-area"
+                             "nosotras-area"
+                             "playa-area"
+                             "shop-area"
+                             "mapa-area";
+    } 
+
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+    .main-container {
+        grid-template-columns: 100%;
+        grid-template-areas: "saludo-area"        
+                             "presentacion-area"
+                             "nosotras-area"
+                             "playa-area"
+                             "shop-area"
+                             "mapa-area";
+    } 
+}
+
+@media screen and (min-width: 992px) {    /* Todos los demas ? */
+    .main-container {
+        grid-template-columns: 29% 69%;
+        grid-template-areas: "saludo-area presentacion-area"
+                             "nosotras-area playa-area"
+                             "shop-area mapa-area";
+    } 
+}
