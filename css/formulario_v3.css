@@ -162,4 +162,8 @@ input[type=reset]:hover {
   .whatsapp-container {
     width: 100%;
   }
+  .side1-container h2, .side2-container h2, .side3-container h2 {
+    font-size: 1.2rem;
+    width: 20rem;
+  }
 }
