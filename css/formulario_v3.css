@@ -159,6 +159,7 @@ input[type=reset]:hover {
   .form-containter {
     grid-template-columns: 98%;
     grid-row-start: auto;
+    width: 98%;
   }
   .form-containter .check {
     grid-column-start: span 1;
@@ -176,8 +177,8 @@ input[type=reset]:hover {
     grid-column-start: 1;
     grid-row-start: auto;
   }
-  .whatsapp-container {
-    width: 100%;
+  .side1-container, .side2-container, .side3-container, .whatsapp-container {
+    width: 98%;
   }
   .side1-container {
     font-size: large;   /* font-m */
