@@ -140,7 +140,36 @@ input[type=reset]:hover {
   /* margin: auto auto; */
   margin-bottom: 0;
 }
-@media screen and ((max-width: 575.98px) or (max-width: 991.98px)) {
+/* @media screen and ((max-width: 575.98px) or (max-width: 991.98px)) { */
+
+@media screen and (max-width: 575.98px) {
+  .main-container {
+    grid-template-columns: 100%;
+    grid-template-areas:  "form-area" "wapp-area" "side1-area" "side2-area" "side3-area" ;
+    grid-row-gap: 1rem;
+    width: 98%;
+  }
+  .form-containter {
+    grid-template-columns: 98%;
+    grid-row-start: auto;
+  }
+  .form-containter .check {
+    grid-column-start: span 1;
+    grid-row-start: auto;
+  }
+  .form-containter .botones-area {
+    grid-column-start: 1;
+    grid-row-start: auto;
+  }
+  .whatsapp-container {
+    width: 100%;
+  }
+  .side1-container h2, .side2-container h2, .side3-container h2 {
+    font-size: 1.2rem;
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
   .main-container {
     grid-template-columns: 100%;
     grid-template-areas:  "form-area" "wapp-area" "side1-area" "side2-area" "side3-area" ;
