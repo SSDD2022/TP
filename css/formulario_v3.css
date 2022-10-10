@@ -1,54 +1,38 @@
-*{
-  font-family: 'Inter Tight', 'Overpass', sans-serif;
-  font-size: large;  
-}
-.font-xxl {
-  font-size: xx-large;
-}
-.font-xl {
-  font-size: x-large;
-}
-.font-m {
-  font-size: large;
-}
-.font-s {
-  font-size: medium;
-}
-.font-xs {
-  font-size: small;
-}
 .main-container {
   display: grid;
-  grid-template-columns: 58% 21% 21%;
+  grid-template-columns: 55% 24% 21%;
   grid-template-rows: auto;
   grid-template-areas: "form-area side1-area side2-area"
                        "form-area side1-area side3-area"
                        "wapp-area wapp-area  wapp-area";
   grid-auto-flow: row;
-  grid-row-gap: 1%;
-  grid-column-gap: 0.5%;
+  grid-row-gap: 0.3rem;
+  grid-column-gap: 0.3rem;
   width: 98%;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .side1-container {
   grid-area: side1-area;
   font-family: 'Overpass';
-  font-family: 'Inter Tight';
+  padding: 1.4rem;
 }
 .side2-container {
   grid-area: side2-area;
   font-family: 'Overpass';
+  padding: 1.4rem;
 }
 .side3-container {
   grid-area: side3-area;
   font-family: 'Overpass';
+  padding: 1.4rem;
 }
 .side1-container, .side2-container, .side3-container, .whatsapp-container, .form-containter {
   background-color: #D5CEC2;
   border: 1px solid rgba(149, 196, 247, 0.2); 
   border-radius: 0.3rem;
-  padding: 1.8rem;
   line-height: 150%;
   margin: 0 auto;
   width: 100%;
@@ -56,7 +40,7 @@
 .side1-container h2, .side2-container h2, .side3-container h2 {
   text-align: center;
   font-weight: bold;
-  font-size: large;
+  font-size: medium;   /* font-s */
   width: 15rem;
   border: 3px solid rgb(70, 70, 121);
   border-radius: 0.3rem;
@@ -84,16 +68,16 @@
 .form-containter {
   grid-area: form-area;
   display: grid;
-  grid-template-columns:  49%  49%;
+  grid-template-columns:  44%  54%;
   grid-auto-flow: row;
-  /* padding: 0.2rem; */
+  padding: 1.2rem;
 }
 label  {
   display: block;
   font-family: 'Overpass';
-  font-size: 1.1rem;
+  font-size: medium;  /* font-s */
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 input,
 select,
@@ -114,6 +98,7 @@ textarea:focus {
 }
 .form-containter .check {
   font-weight: 800;
+  /* font-size: small; font-xs */
   grid-column-start: span 2;
   margin-bottom: 2rem;
 }
@@ -129,13 +114,13 @@ textarea:focus {
 }
 .form-containter .estado {
   margin-top: 0.5rem;
-  width: 20vw;
+  width: 15rem;
 }
 .form-containter .botones {
   border: none;
   border-radius: 0.25vw;
   color: white; 
-  font-size: 1.1rem;
+  font-size: medium;   /* font-S */
   font-weight: bold;
   margin: 0 1.8rem 0 0;
   text-align: center;
@@ -165,7 +150,11 @@ input[type=reset]:hover {
 @media screen and (max-width: 575.98px) {
   .main-container {
     grid-template-columns: 100%;
-    grid-template-areas:  "form-area" "wapp-area" "side1-area" "side2-area" "side3-area" ;
+    grid-template-areas: "form-area" 
+                         "wapp-area"
+                         "side1-area"
+                         "side2-area"
+                         "side3-area" ;
     grid-row-gap: 1rem;
     width: 98%;
   }
@@ -177,6 +166,9 @@ input[type=reset]:hover {
     grid-column-start: span 1;
     grid-row-start: auto;
   }
+  .form-containter .check-item {
+    margin: auto 0.1rem;
+  }
   .form-containter .botones-area {
     grid-column-start: 1;
     grid-row-start: auto;
@@ -185,17 +177,20 @@ input[type=reset]:hover {
     width: 100%;
   }
   .side1-container {
-    font-size: 3em;
+    font-size: large;   /* font-m */
   }
   .side1-container h2, .side2-container h2, .side3-container h2 {
-    font-size: 1.2rem;
+    font-size: x-large;   /* font-xl */
     width: 20rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 991.98px) {
   .main-container {
-    grid-template-columns: 100%;
-    grid-template-areas:  "form-area" "wapp-area" "side1-area" "side2-area" "side3-area" ;
+    grid-template-columns: 52% 46%;
+    grid-template-areas:  "form-area  form-area" 
+                          "wapp-area  wapp-area" 
+                          "side1-area side2-area" 
+                          "side1-area side3-area" ;
     grid-row-gap: 1rem;
     width: 98%;
   }
@@ -214,11 +209,7 @@ input[type=reset]:hover {
   .whatsapp-container {
     width: 100%;
   }
-  .side1-container {
-    font-size: 3em;
-  }
   .side1-container h2, .side2-container h2, .side3-container h2 {
-    font-size: 1.2rem;
     width: 20rem;
   }
 }
