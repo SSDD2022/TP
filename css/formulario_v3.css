@@ -146,6 +146,9 @@ input[type=reset]:hover {
 /* @media screen and ((max-width: 575.98px) or (max-width: 991.98px)) { */
 
 @media screen and (max-width: 575.98px) {
+  main {
+    margin-top: 1rem; 
+  }
   .main-container {
     grid-template-columns: 100%;
     grid-template-areas: "form-area" 
