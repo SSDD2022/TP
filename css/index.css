@@ -1,0 +1,54 @@
+
+/**************************************************************************************************/
+
+.main-container {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 24% 39% 34%;
+    grid-template-rows: auto ;
+    grid-template-areas: "saludo-area presentacion-area presentacion-area"
+                         "saludo-area nosotras-area     playa-area"  
+                         "shop-area   mapa-area         mapa-area" ;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+.saludo-container{
+    grid-area: saludo-area;
+}
+
+.presentacion-container{
+    grid-area: presentacion-area;
+}
+.presentacion-container .titulo {
+    text-align: center;
+    font-size: 2rem;
+}
+.presentacion-container .subtitulo, .nosotras-container .subtitulo, .shop-container .subtitulo{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.nosotras-container{
+   grid-area: nosotras-area;
+   font-style: italic;
+   line-height: 150%;
+   margin-left: 2rem;
+}
+
+.playa-container{
+    grid-area: playa-area;
+    margin-left: 2rem;
+}
+
+.shop-container{
+    grid-area: shop-area;
+    margin-left: 2rem;
+    line-height: 150%;
+}
+.shop-container .list-type {
+    list-style-image: url(/img/bullet.png);
+}
+.mapa-container{
+   grid-area: mapa-area;
+}
+
