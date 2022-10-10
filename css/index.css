@@ -77,9 +77,9 @@
 
 @media screen and (min-width: 992px) {    /* Todos los demas ? */
     .main-container {
-        grid-template-columns: 29% 69%;
-        grid-template-areas: "saludo-area presentacion-area"
-                             "nosotras-area playa-area"
-                             "shop-area mapa-area";
+        grid-template-columns: 24% 39% 34%;
+        grid-template-areas: "saludo-area presentacion-area presentacion-area"
+        "saludo-area nosotras-area     playa-area"  
+        "shop-area   mapa-area         mapa-area" ;
     } 
 }
