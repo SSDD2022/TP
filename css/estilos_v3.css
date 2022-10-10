@@ -5,7 +5,7 @@
     font-family:                   /* setear fuentes y por último sans-serif */
        'Work Sans', 'Overpass', 'Lato', sans-serif;  /* Verdana, Geneva, Tahoma, sans-serif; */
     /* font-size: 62.5%;              1 rem equivale a 10px */
-    font-size: 1vw;
+    /* font-size: 1vw; */
     box-sizing: border-box;
     user-select: none;
  }
