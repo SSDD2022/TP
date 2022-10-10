@@ -136,9 +136,10 @@ footer {
 /* Extra small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px) { 
     .header-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 3;
-        grid-template-areas: "marca-area" "logo-area" "nav-area";
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 2;
+        grid-template-areas: "marca-area logo-area" 
+                             "nav-area   nav-area";
     }
 }
 
@@ -148,7 +149,8 @@ footer {
     .header-container {
         grid-template-columns: 3fr 1fr;
         grid-template-rows: 2;
-        grid-template-areas: "marca-area logo-area" "nav-area logo-area";
+        grid-template-areas: "marca-area logo-area" 
+                             "nav-area   nav-area";
     }
 }
 
