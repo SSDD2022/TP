@@ -20,7 +20,7 @@
 /* Pagina */
 .page-container {
     display: grid;
-    grid-gap: 2vw;
+    grid-gap: 1.5vw;     /* AJUSTADO */
 
     grid-template-columns: 1fr;   /* Para maquetar 1fr 1fr (sin usar named aeras) */
     grid-template-rows: repeat (3, auto);
