@@ -1,3 +1,22 @@
+*{
+  font-family: 'Inter Tight', 'Overpass', sans-serif;
+  font-size: large;  
+}
+.font-xxl {
+  font-size: xx-large;
+}
+.font-xl {
+  font-size: x-large;
+}
+.font-m {
+  font-size: large;
+}
+.font-s {
+  font-size: medium;
+}
+.font-xs {
+  font-size: small;
+}
 .main-container {
   display: grid;
   grid-template-columns: 58% 21% 21%;
@@ -15,6 +34,7 @@
 .side1-container {
   grid-area: side1-area;
   font-family: 'Overpass';
+  font-family: 'Inter Tight';
 }
 .side2-container {
   grid-area: side2-area;
@@ -164,6 +184,9 @@ input[type=reset]:hover {
   .whatsapp-container {
     width: 100%;
   }
+  .side1-container {
+    font-size: 3em;
+  }
   .side1-container h2, .side2-container h2, .side3-container h2 {
     font-size: 1.2rem;
     width: 20rem;
@@ -190,6 +213,9 @@ input[type=reset]:hover {
   }
   .whatsapp-container {
     width: 100%;
+  }
+  .side1-container {
+    font-size: 3em;
   }
   .side1-container h2, .side2-container h2, .side3-container h2 {
     font-size: 1.2rem;
