@@ -40,8 +40,8 @@
 .side1-container h2, .side2-container h2, .side3-container h2 {
   text-align: center;
   font-weight: bold;
-  font-size: medium;   /* font-s */
-  width: 15rem;
+  font-size: medium;  
+  width: 98%;
   border: 3px solid rgb(70, 70, 121);
   border-radius: 0.3rem;
   padding: 0.4rem;
@@ -75,7 +75,7 @@
 label  {
   display: block;
   font-family: 'Overpass';
-  font-size: medium;  /* font-s */
+  font-size: medium;  
   font-weight: 800;
   margin-bottom: 0.2rem;
 }
@@ -98,7 +98,6 @@ textarea:focus {
 }
 .form-containter .check {
   font-weight: 800;
-  /* font-size: small; font-xs */
   grid-column-start: span 2;
   margin-bottom: 2rem;
 }
@@ -118,7 +117,7 @@ textarea:focus {
   border: none;
   border-radius: 0.25vw;
   color: white; 
-  font-size: medium;   /* font-S */
+  font-size: medium; 
   font-weight: bold;
   margin: 0 1.8rem 0 0;
   text-align: center;
@@ -140,11 +139,10 @@ input[type=reset]:hover {
 .form-containter .botones-area {
   grid-column-start: 2;
   grid-row-start: auto;
-  /* margin: auto auto; */
   margin-bottom: 0;
 }
-/* @media screen and ((max-width: 575.98px) or (max-width: 991.98px)) { */
 
+/* @media screen and ((max-width: 575.98px) or (max-width: 991.98px)) { */
 @media screen and (max-width: 575.98px) {
   main, .main-container {
     margin-top: 0; 
@@ -184,11 +182,10 @@ input[type=reset]:hover {
     width: 98%;
   }
   .side1-container {
-    font-size: large;   /* font-m */
+    font-size: large;   
   }
   .side1-container h2, .side2-container h2, .side3-container h2 {
-    font-size: x-large;   /* font-xl */
-    width: 20rem;
+    font-size: x-large;   
   }
 }
 @media screen and (min-width: 576px) and (max-width: 991.98px) {
@@ -218,8 +215,5 @@ input[type=reset]:hover {
   }
   .whatsapp-container {
     width: 100%;
-  }
-  .side1-container h2, .side2-container h2, .side3-container h2 {
-    width: 20rem;
   }
 }
