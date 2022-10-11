@@ -167,7 +167,7 @@ input[type=reset]:hover {
     grid-row-start: auto;
   }
   .form-containter .check-recuadro {
-    padding: 0.05rem 0.3rem;
+    padding: 0.1rem 0.3rem 0.05rem;
   }
   .form-containter .check-item {
     margin: auto 0.1rem;
@@ -202,7 +202,7 @@ input[type=reset]:hover {
     grid-row-start: auto;
   }
   .form-containter .check-recuadro {
-    padding: 0.05rem 0.3rem;
+    padding: 0.1rem 0.3rem 0.05rem;
   }
   .form-containter .botones-area {
     grid-column-start: 1;
