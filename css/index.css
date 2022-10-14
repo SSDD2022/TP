@@ -19,19 +19,22 @@ em {
     justify-content: center;
     width: 98%;
     margin: 0 auto;
+    margin-top: 3rem;
 }
 .saludo-container{
     grid-area: saludo-area;
 }
 .presentacion-container{
     grid-area: presentacion-area;
+    line-height: 150%;
+    margin-top: 3rem;
 }
 .presentacion-container .titulo {
     text-align: center;
     font-size: xx-large;
 }
 .presentacion-container .subtitulo, .nosotras-container .subtitulo, .shop-container .subtitulo,
- .somos-container .subtitulo{
+ .somos-container .subtitulo, .somos-container strong{
     font-size: large;
     font-weight: 800;
 }
@@ -46,6 +49,7 @@ em {
     grid-area: playa-area;
     margin-left: 2rem;
     object-fit: contain;
+    padding: 2rem;
 }
 .playa-container .img-oval {
     border-radius: 50%;

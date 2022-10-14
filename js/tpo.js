@@ -31,7 +31,8 @@ createApp({
             titCaracteristicas: 'Características adicionales',
             caracteristicas: ['Respecto del contenido, acompañamos un emprendimiento vinculado a un participante del equipo',
                               'Configuramos el favicon',
-                              'Distribuimos los archivos en carpetas, según sus características'
+                              'Facilitamos el posicionamiento SEO enfatizando conceptos claves',
+                              'Distribuimos los archivos en carpetas, según su función'
                              ],
             titLinks: 'Links',
             links: [{ sitio: 'Repositorio', 
