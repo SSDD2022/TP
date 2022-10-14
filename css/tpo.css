@@ -1,0 +1,12 @@
+main {
+    margin: 10px;
+}
+h3 {
+    font-size: large;
+    font-weight: bold;    
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+ul {
+    margin: 0;
+}
