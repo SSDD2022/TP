@@ -9,27 +9,17 @@
     box-sizing: border-box;
     user-select: none;
  }
- .font-xxl {                       /* AJUSTADO */
-    font-size: xx-large;
-  }
-  .font-xl {
-    font-size: x-large;
-  }
-  .font-m {
-    font-size: large;
-  }
-  .font-s {
-    font-size: medium;
-  }
-  .font-xs {
-    font-size: small;
-  }
 
  /**************************************************************************************************/
  /* Varias */
-  .en_linea {
+.en_linea {
     display: inline;
- }
+}
+
+.img_responsive{
+    width: 100%;
+    height: auto;
+}
 
 /**************************************************************************************************/
 /* Pagina */

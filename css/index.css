@@ -13,7 +13,7 @@ em {
     grid-template-areas: "saludo-area presentacion-area presentacion-area"
                          "saludo-area nosotras-area     playa-area"  
                          "somos-area  somos-area        somos-area"
-                         "shop-area   mapa-area         mapa-area" ;
+                         "mapa-area   mapa-area         shop-area" ;
     text-align: justify;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,6 @@ em {
 .saludo-container{
     grid-area: saludo-area;
 }
-
 .presentacion-container{
     grid-area: presentacion-area;
 }
@@ -114,14 +113,12 @@ em {
 
 @media screen and (min-width: 576px) and (max-width: 991.98px) {
     .main-container {
-        grid-template-columns: 100%;
-        grid-template-areas: "saludo-area"        
-                             "presentacion-area"
-                             "nosotras-area"
-                             "playa-area"
-                             "somos-area"
-                             "shop-area"
-                             "mapa-area";
+        grid-template-columns: 49% 49%;
+        grid-template-areas: "saludo-area        saludo-area"        
+                             "presentacion-area  presentacion-area"
+                             "nosotras-area      playa-area"
+                             "somos-area         somos-area"
+                             "mapa-area          shop-area";
     } 
     .saludo-container{
         grid-area: saludo-area;
@@ -152,6 +149,8 @@ em {
      }
      .mapa-container{
         margin: 0 auto;
+        /* width: 100%;
+        height: auto; */
      }
 }
 
