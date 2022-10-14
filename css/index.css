@@ -82,6 +82,7 @@ em {
                              "shop-area"
                              "mapa-area";
         width: 100%;
+        margin-top: 0;
     } 
     .saludo-container{
         grid-area: saludo-area;
@@ -92,6 +93,7 @@ em {
         margin: 0 auto;
         width: 98%;
         margin-bottom: 2rem;
+        padding-top: 2rem;
     }
     .nosotras-container{
         grid-area: nosotras-area;
@@ -101,6 +103,7 @@ em {
      .playa-container{
          grid-area: playa-area;
          margin: 0 auto;
+         padding: 0;
          margin-bottom: 2rem;
      }
      .playa-container .img-oval {
@@ -123,6 +126,7 @@ em {
                              "nosotras-area      playa-area"
                              "somos-area         somos-area"
                              "mapa-area          shop-area";
+         margin-top: 0;
     } 
     .saludo-container{
         grid-area: saludo-area;
@@ -133,6 +137,7 @@ em {
         margin: 0 auto;
         width: 98%;
         margin-bottom: 2rem;
+        padding-top: 2rem;
     }
     .nosotras-container{
         grid-area: nosotras-area;
