@@ -27,8 +27,12 @@ createApp({
                          'Se incorporó una transición en el menú de navegación',
                          'La estructura HTML se maquetó con grid',
                          'Está subido a GitHub, y se vinculó el repositorio a Netlify',
-                         'Respecto del contenido, acompañamos a un emprendimiento vinculado a un participante del equipo',
                         ],
+            titCaracteristicas: 'Características adicionales',
+            caracteristicas: ['Respecto del contenido, acompañamos un emprendimiento vinculado a un participante del equipo',
+                              'Configuramos el favicon',
+                              'Distribuimos los archivos en carpetas, según sus características'
+                             ],
             titLinks: 'Links',
             links: [{ sitio: 'Repositorio', 
                       url:   'https://github.com/SSDD2022/TP'

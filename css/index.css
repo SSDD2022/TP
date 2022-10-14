@@ -1,6 +1,10 @@
 
 /**************************************************************************************************/
-
+em {
+    text-align: center;
+    font-size: xx-large;  
+    font-style: normal;
+}
 .main-container {
     display: grid;
     grid-gap: 1vw;
@@ -8,10 +12,13 @@
     grid-template-rows: auto ;
     grid-template-areas: "saludo-area presentacion-area presentacion-area"
                          "saludo-area nosotras-area     playa-area"  
+                         "somos-area  somos-area        somos-area"
                          "shop-area   mapa-area         mapa-area" ;
     text-align: justify;
     align-items: center;
     justify-content: center;
+    width: 98%;
+    margin: 0 auto;
 }
 .saludo-container{
     grid-area: saludo-area;
@@ -22,10 +29,11 @@
 }
 .presentacion-container .titulo {
     text-align: center;
-    font-size: 2rem;
+    font-size: xx-large;
 }
-.presentacion-container .subtitulo, .nosotras-container .subtitulo, .shop-container .subtitulo{
-    font-size: 1.2rem;
+.presentacion-container .subtitulo, .nosotras-container .subtitulo, .shop-container .subtitulo,
+ .somos-container .subtitulo{
+    font-size: large;
     font-weight: 800;
 }
 .nosotras-container{
@@ -38,8 +46,16 @@
 .playa-container{
     grid-area: playa-area;
     margin-left: 2rem;
+    object-fit: contain;
 }
-
+.playa-container .img-oval {
+    border-radius: 50%;
+}
+.somos-container {
+   grid-area: somos-area;
+   justify-content: center;
+   margin: 0 auto;
+}
 .shop-container{
     grid-area: shop-area;
     margin-left: 2rem;
@@ -52,17 +68,50 @@
    grid-area: mapa-area;
 }
 
-@media screen and (max-width: 575.98px) {
+ @media screen and (max-width: 575.98px) {
     .main-container {
         grid-template-columns: 100%;
         grid-template-areas: "saludo-area"        
                              "presentacion-area"
                              "nosotras-area"
                              "playa-area"
+                             "somos-area"
                              "shop-area"
                              "mapa-area";
+        width: 100%;
     } 
+    .saludo-container{
+        grid-area: saludo-area;
+        margin: 0 auto;
+    }
+    .presentacion-container{
+        grid-area: presentacion-area;
+        margin: 0 auto;
+        width: 98%;
+        margin-bottom: 2rem;
+    }
+    .nosotras-container{
+        grid-area: nosotras-area;
+        margin: 0 auto;
+        width: 98%;
+     }
+     .playa-container{
+         grid-area: playa-area;
+         margin: 0 auto;
+         margin-bottom: 2rem;
+     }
+     .playa-container .img-oval {
+        border-radius: 50%;
+    }  
+    .shop-container{
+         grid-area: shop-area;
+         margin: 0 auto;
+     }
+     .mapa-container{
+        margin: 0 auto;
+     }
 }
+
 @media screen and (min-width: 576px) and (max-width: 991.98px) {
     .main-container {
         grid-template-columns: 100%;
@@ -70,16 +119,39 @@
                              "presentacion-area"
                              "nosotras-area"
                              "playa-area"
+                             "somos-area"
                              "shop-area"
                              "mapa-area";
     } 
+    .saludo-container{
+        grid-area: saludo-area;
+        margin: 0 auto;
+    }
+    .presentacion-container{
+        grid-area: presentacion-area;
+        margin: 0 auto;
+        width: 98%;
+        margin-bottom: 2rem;
+    }
+    .nosotras-container{
+        grid-area: nosotras-area;
+        margin: 0 auto;
+        width: 98%;
+     }
+     .playa-container{
+         grid-area: playa-area;
+         margin: 0 auto;
+         margin-bottom: 2rem;
+     }
+     .playa-container .img-oval {
+        border-radius: 50%;
+    }  
+    .shop-container{
+         grid-area: shop-area;
+         margin: 0 auto;
+     }
+     .mapa-container{
+        margin: 0 auto;
+     }
 }
 
-@media screen and (min-width: 992px) {    /* Todos los demas ? */
-    .main-container {
-        grid-template-columns: 24% 39% 34%;
-        grid-template-areas: "saludo-area presentacion-area presentacion-area"
-        "saludo-area nosotras-area     playa-area"  
-        "shop-area   mapa-area         mapa-area" ;
-    } 
-}

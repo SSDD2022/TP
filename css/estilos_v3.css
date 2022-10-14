@@ -181,14 +181,14 @@ footer {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 2500px) {
+/* @media screen and (min-width: 2500px) {
     .page-container {
         max-width: 2500px;
     }
     .header-fixed {
         max-width: 2500px;
     } 
-}
+} */
 
 /**************************************************************************************************/
 /* Para maquetar */
@@ -201,7 +201,7 @@ footer {
     padding: 20px;
     border-radius: 4px;
 } */
-.maqueta-3cols {
+/* .maqueta-3cols {
     grid-column-start: span 3;
     grid-row-start: auto;
 }
@@ -220,4 +220,4 @@ footer {
 .maqueta-5cols-4filas {
     grid-column-start: span 5;
     grid-row-start: span 4;
-}
+} */
