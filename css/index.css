@@ -32,9 +32,10 @@ em {
 .presentacion-container .titulo {
     text-align: center;
     font-size: xx-large;
+    line-height: 120%;
 }
 .presentacion-container .subtitulo, .nosotras-container .subtitulo, .shop-container .subtitulo,
- .somos-container .subtitulo, .somos-container strong{
+ .somos-container .subtitulo, .presentacion-container strong, .somos-container strong{
     font-size: large;
     font-weight: 800;
 }

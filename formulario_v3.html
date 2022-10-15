@@ -31,8 +31,8 @@
 
         <main class="main-container">
 
-            <!-- <form class="main-container"  action="show-data.html" method="GET" target="_blank"> -->
-            <form class="form-containter">
+            <!-- <form class="form-container" id="f_form"  action="show-data.html" method="GET" target="_blank"> -->
+            <form class="form-containter" name="f_form" id="f_form">
                 <div class="check">
                     <label for="f_motivo" class="en_linea  check-recuadro">Queres</label>
                     <input type="checkbox" name="f_motivo" value="Cons" id="f_motivo" tabindex="1" class="check-item">Consultar
@@ -66,10 +66,10 @@
                 </div>
 
                 <div>
-                    <label for="f_direccion">Dirección</label>
+                    <label for="f_direccion">Dirección</label> <!-- Requerido si hace una compra  -->
                     <input type="text" name="f_direccion" id="f_direccion" tabindex="9" maxlength="50" size="25"
                            placeholder="Dirección de envío">
-                    <select name="f_estado" tabindex="10" class="estado">
+                    <select name="f_estado" tabindex="10" class="estado">  <!-- Requerido Venezuela si hace una compra  -->
                         <option>No Venezuela</option>
                         <option>Amazonas</option>
                         <option>Anzoátegui</option>
@@ -105,8 +105,8 @@
                 </div>
 
                 <div class="botones-area">
-                    <input type="submit" value="Confirmar" tabindex="12" class="botones">
-                    <input type="reset" value="Limpiar" tabindex="13" class="botones">
+                    <input type="submit" name="f_enviar" id="f_enviar" value="Confirmar" tabindex="12" class="botones">
+                    <input type="reset"  name="f_limpiar" value="Limpiar"  tabindex="13" class="botones">
                 </div>
             </form>
 
@@ -124,7 +124,7 @@
                 <ul class="list-type">
                     <li><span class="list-item">Somos tienda online en Venezuela, Edo. Miranda</span></li>
                     <li><span class="list-item">Comunicate por el link de Whatsapp o vía DM</span></li>
-                    <li><span class="list-item">Envianos una captura de las prendas que te interesen y comentanos tus dudas</span></li>
+                    <li><span class="list-item">Envianos el código de las prendas que te interesen y comentanos tus dudas</span></li>
                     <li><span class="list-item">Te confirmaremos disponibilidad y precio para definir tu forma de pago, método y fecha de entrega</span></li>
                     <!-- <li>Una vez concretada tu orden, deberas llenar un pequeño formulario con tus datos para lograr el envío satisfactoriamente</li> -->
                     <li><span class="list-item">Aceptamos cambios únicamente por talla, no hacemos devoluciones</span></li>
@@ -158,5 +158,6 @@
         </footer>
     </div>
     <script src="js\index.js"></script>
+    <script src="js\formulario.js"></script>
 </body>
 </html>

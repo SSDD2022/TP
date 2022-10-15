@@ -1,4 +1,5 @@
-let header_str = 
+// Header
+const header_str =
    `<div class="header-marca">
        <img src="img/marca-pequeña.png" alt="Maviris">
     </div>
@@ -13,9 +14,10 @@ let header_str =
         <img src="img/logo-negro-intenso.png" alt="Logo_Maviris">
     </div>`
 document.getElementById("header-id").innerHTML = header_str;
-let footer_str =
-   `<!-- Redes sociales -->
-    <div>
+
+// Footer
+const footer_str =
+   ` <div> <!-- Redes sociales -->
        <p class="en_linea"> Seguinos en </p>
        <a href="https://www.instagram.com/" class="red_social" target="_blank"><i
                class="fa-brands fa-instagram"></i></a>
@@ -27,7 +29,8 @@ let footer_str =
                class="fa-brands fa-pinterest-p"></i></a>
        <a href="https://www.youtube.com/" class="red_social" target="_blank"><i
                class="fa-brands fa-square-youtube"></i></a>
-    </div>
-    <!-- Copywrite -->
-    <div>Derechos reservados Equipo ASV &copy;2022</div>`
+     </div>
+     <div>Derechos reservados Equipo ASV &copy;2022</div>  <!-- Copywrite --> `
 document.getElementById("footer-id").innerHTML = footer_str;
+
+//-------------------------------------------------------------------------------------------//
