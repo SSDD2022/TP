@@ -159,6 +159,7 @@ input[type=reset]:hover {
                          "side3-area" ;
     grid-row-gap: 1rem;
     width: 98%;
+    margin-left: 0;
   }
   .form-containter {
     grid-template-columns: 98%;
