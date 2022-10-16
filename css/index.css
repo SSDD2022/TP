@@ -46,7 +46,7 @@ em {
    grid-area: nosotras-area;
    line-height: 120%;
    margin-left: 2rem;
-   font-family: 'Lato';     /* font-style: italic; */
+   font-style: italic;
 }
 
 .playa-container{
@@ -162,8 +162,6 @@ em {
      }
      .mapa-container{
         margin: 0 auto;
-        /* width: 100%;
-        height: auto; */
      }
 }
 

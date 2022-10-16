@@ -18,19 +18,19 @@
   grid-area: side1-area;
   font-family: 'Overpass';
   padding: 1.4rem;
-  text-align: start;   /* NUEVO */
+  text-align: start; 
 }
 .side2-container {
   grid-area: side2-area;
   font-family: 'Overpass';
   padding: 1.4rem;
-  text-align: start;   /* NUEVO */
+  text-align: start;
 }
 .side3-container {
   grid-area: side3-area;
   font-family: 'Overpass';
   padding: 1.4rem;
-  text-align: start;   /* NUEVO */
+  text-align: start;
 }
 .side1-container, .side2-container, .side3-container, .whatsapp-container, .form-containter {
   background-color: #D5CEC2;
@@ -158,12 +158,12 @@ input[type=reset]:hover {
                          "side2-area"
                          "side3-area" ;
     grid-row-gap: 1rem;
-    width: 100%; /* 98%; */
+    width: 98%;
   }
   .form-containter {
     grid-template-columns: 98%;
     grid-row-start: auto;
-    width: 100%; /* 98%; */
+    width:  98%; 
   }
   .form-containter .check {
     grid-column-start: span 1;
@@ -180,7 +180,7 @@ input[type=reset]:hover {
     grid-row-start: auto;
   }
   .side1-container, .side2-container, .side3-container, .whatsapp-container {
-    width: 100%; /* 98%; */
+    width:  98%; 
   }
 }
 @media screen and (min-width: 576px) and (max-width: 991.98px) {
