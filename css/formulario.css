@@ -18,16 +18,19 @@
   grid-area: side1-area;
   font-family: 'Overpass';
   padding: 1.4rem;
+  text-align: start;   /* NUEVO */
 }
 .side2-container {
   grid-area: side2-area;
   font-family: 'Overpass';
   padding: 1.4rem;
+  text-align: start;   /* NUEVO */
 }
 .side3-container {
   grid-area: side3-area;
   font-family: 'Overpass';
   padding: 1.4rem;
+  text-align: start;   /* NUEVO */
 }
 .side1-container, .side2-container, .side3-container, .whatsapp-container, .form-containter {
   background-color: #D5CEC2;

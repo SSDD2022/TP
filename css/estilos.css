@@ -60,11 +60,13 @@ header {
     /* font-size: 1.2rem; AJUSTADO */            
     font-weight: 800;
     margin: 1.3rem 0.6vw 0.5rem 0.6vw;
+    transition: font-size 1s;   /* NEW */
 }
 .link-nav:hover , .link-nav:active , .header-nav > a:hover {
     color: #B87988;
     background-color: transparent;
     text-decoration: underline overline;
+    font-size: 92%; 
 }
 .link-selected {
     color: #B87988;
@@ -81,13 +83,14 @@ header {
 main {
    grid-area: main-area;
 }
+
 .main-container {
     display: grid;
     grid-gap: 1vw;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
+    text-align: justify;
 }
-
 
 /**************************************************************************************************/
 /* Footer */
@@ -129,7 +132,7 @@ footer {
 
 .header-container {
     display: grid;
-    grid-gap: 1vw;
+    /* grid-gap: 1vw; */
     grid-template-columns: 30% auto 10%;
     grid-template-rows: auto;
     grid-template-areas: "marca-area nav-area logo-area";
@@ -146,6 +149,9 @@ footer {
         grid-template-areas: "marca-area logo-area" 
                              "nav-area   nav-area";
     }
+    .header-marca, .header-nav, .header-logo {
+        margin: 0 2vw 0 2vw;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) 
@@ -156,6 +162,9 @@ footer {
         grid-template-rows: 2;
         grid-template-areas: "marca-area logo-area" 
                              "nav-area   nav-area";
+    }
+    .header-marca, .header-nav, .header-logo {
+        margin: 0 2vw 0 2vw;
     }
 }
 
@@ -181,33 +190,3 @@ footer {
 } */
 
 /**************************************************************************************************/
-/* Para maquetar */
-/*.page-container > header,*/
-/* .page-container >  main, */
-/*.page-container >  footer, */
-/* .page-container >  div, */
-/* .main-container >  div  { 
-    background-color: darksalmon;
-    padding: 20px;
-    border-radius: 4px;
-} */
-/* .maqueta-3cols {
-    grid-column-start: span 3;
-    grid-row-start: auto;
-}
-.maqueta-2cols-2filas {
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-}
-.maqueta-5cols {
-    grid-column-start: span 5;
-    grid-row-start: auto;
-}
-.maqueta-5cols-3filas {
-    grid-column-start: span 5;
-    grid-row-start: span 3;
-}
-.maqueta-5cols-4filas {
-    grid-column-start: span 5;
-    grid-row-start: span 4;
-} */

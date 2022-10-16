@@ -1,17 +1,16 @@
 // Header
 const header_str =
    `<div class="header-marca">
-       <img src="img/marca-pequeña.png" alt="Maviris">
+       <img src="img/marca.png" alt="Maviris">
     </div>
-    <!-- <h1 class="animate_animated animate_backInLeft">Contacto</h1> -->
     <div class="header-nav">
         <a href="index.html"          class="link-nav">Inicio</a>
-        <a href="hombre_v3.html"      class="link-nav">Hombres</a>
-        <a href="prueba.html"         class="link-nav">Mujeres</a>
-        <a href="formulario_v3.html"  class="link-nav">Contacto</a>
+        <a href="mujer.html"          class="link-nav">Mujeres</a>
+        <a href="hombre.html"         class="link-nav">Hombres</a>
+        <a href="formulario.html"     class="link-nav">Contacto</a>
     </div>
     <div class="header-logo">
-        <img src="img/logo-negro-intenso.png" alt="Logo_Maviris">
+        <img src="img/logo.png" alt="Logo_Maviris" class="img_responsive">
     </div>`
 document.getElementById("header-id").innerHTML = header_str;
 
