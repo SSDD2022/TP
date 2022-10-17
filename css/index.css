@@ -99,6 +99,9 @@ em {
         margin-bottom: 2rem;
         padding-top: 2rem;
     }
+    .presentacion-container .titulo {
+        font-size: x-large;
+    }
     .nosotras-container{
         grid-area: nosotras-area;
         margin: 0 auto;
