@@ -57,3 +57,12 @@ function validarRequeridos (e) {
 document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("f_form").addEventListener('submit', validarRequeridos);
       })
+
+
+//---------------------------------------------------------------------
+// API Rest
+
+function getIP(json) {
+   document.getElementById('ip_client').innerHTML = json.ip
+}
+

@@ -26,6 +26,7 @@ createApp({
                          'Se trabajó responsividad, particularmente el formulario de contacto es totalmente responsivo (por ejemplo, se validó en notebook de 1.366px, celular apaisado de 777px y celular de 384px)',
                          'Se incorporó una transición en el menú de navegación',
                          'La estructura HTML se maquetó con grid',
+                         'Utilizamos una API para obtener la IP (api.ipify.org / getIP) y la mostramos en el formulario',
                          'Está subido a GitHub, y se vinculó el repositorio a Netlify',
                         ],
             titCaracteristicas: 'Otras características',
@@ -44,8 +45,7 @@ createApp({
                     }
                    ],
             titFuera: 'No realizado',
-            fueraScope: ['Consumir una API Rest desde JavaScript',
-                          'No se utilizaron frameworks de CSS (opcional)',
+            fueraScope: [ 'No se utilizaron frameworks de CSS (opcional)',
                           'No pudimos trabajar en forma colaborativa con GitHub'
                         ],
         }

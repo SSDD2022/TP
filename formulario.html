@@ -32,7 +32,7 @@
         <main class="main-container">
 
             <!-- <form class="form-containter" name="f_form" id="f_form"  action="show-data.html" method="GET" target="_blank"> -->
-            <form class="form-containter" name="f_form" id="f_form">
+            <form class="form-containter" name="f_form" id="f_form" >
                 <div class="check">
                     <label for="f_motivo" class="en_linea  check-recuadro">Queres</label>
                     <input type="checkbox" name="f_motivo" value="Cons" id="f_motivo" tabindex="1" class="check-item">Consultar
@@ -104,9 +104,14 @@
                               placeholder="Tu mensaje"></textarea>
                 </div>
 
+                <div>
+                    <label class="en_linea">IP</label>
+                    <span id="ip_client"></span>
+                </div>
+
                 <div class="botones-area">
                     <input type="submit" name="f_enviar" id="f_enviar" value="Confirmar" tabindex="12" class="botones">
-                    <input type="reset"  name="f_limpiar" value="Limpiar"  tabindex="13" class="botones">
+                    <input type="reset"  name="f_limpiar"              value="Limpiar"   tabindex="13" class="botones">
                 </div>
             </form>
 
@@ -157,5 +162,7 @@
     </div>
     <script src="js\index.js"></script>
     <script src="js\formulario.js"></script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
 </body>
 </html>
